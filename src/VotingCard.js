@@ -1,12 +1,23 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Booth from './Booth';
+import Results from './Results';
 
 export default function VotingCard(args) {
+    const [state, setState] = useState(args.state);
     const options = args.votes.map(vote => (vote.option));
+    useEffect(()=>{
+        if(state !== args.state){
+            setState(args.state)
+        }
+    }, [args.state])
+    let votingBooth = <Booth options = {options} onVote = {onVote}/>
+    if(state === 'close'){
+        votingBooth = <Results{...args} />
+    }
     return (
         <div>
             <h3>{args.title}</h3>
-            <Booth options = {options} onVote = {onVote}/>
+            {votingBooth}
         </div>
     );
     function onVote(key){
@@ -15,6 +26,7 @@ export default function VotingCard(args) {
                 //console.log(vote.count);
                 vote.count++;
                 //console.log(vote.count);
+                setState('close');
                 return false;
             }
             return true;
