@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/angular/types-6-0';
 
 import VotingCard from './VotingCard.component';
-
+import Results from './Results.component'
 import Booth from './Booth.component'
 import { moduleMetadata } from '@storybook/angular';
 
@@ -10,10 +10,18 @@ export default {
     component: VotingCard,
     decorators: [
         moduleMetadata({
-            declarations: [VotingCard, Booth]
+            declarations: [VotingCard, Booth, Results]
         })
-    ]
-} as Meta;
+    ],
+    argTypes: {
+        title: '',
+        state: {
+            options: ['open', 'close'],
+            control: { type: 'radio' }
+        },
+        votes: [{}]
+    }
+} as unknown as Meta;
 
 const Template: Story<VotingCard> = (args: VotingCard) =>({
     props:args,
