@@ -54,7 +54,7 @@
         },
         {
             "name": "BoothComponent",
-            "id": "component-BoothComponent-2a534cd5b037b90fa8288bc9ebba7be2",
+            "id": "component-BoothComponent-7f0103a0a645c4839f38a3e1065418ea",
             "file": "src/stories/Booth.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -64,7 +64,7 @@
             "selector": "Booth",
             "styleUrls": [],
             "styles": [],
-            "template": "<button *ngFor=\"let option of options\" click='vote.emit({{option}})'> {{ option }} </button>",
+            "template": "<button *ngFor=\"let option of options\" (click)='vote.emit(option)'> {{ option }} </button>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
@@ -77,7 +77,7 @@
             "outputsClass": [
                 {
                     "name": "vote",
-                    "defaultValue": "new EventEmitter<string>()",
+                    "defaultValue": "new EventEmitter()",
                     "line": 11,
                     "type": "EventEmitter"
                 }
@@ -89,7 +89,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core'\r\n\r\n@Component({\r\n    selector: 'Booth',\r\n    template: `<button *ngFor=\"let option of options\" click='vote.emit({{option}})'> {{ option }} </button>`\r\n  })\r\nexport default class BoothComponent {\r\n    @Input()\r\n    options = ['test']\r\n    @Output()\r\n    vote = new EventEmitter<string>()\r\n}",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core'\r\n\r\n@Component({\r\n    selector: 'Booth',\r\n    template: `<button *ngFor=\"let option of options\" (click)='vote.emit(option)'> {{ option }} </button>`\r\n  })\r\nexport default class BoothComponent {\r\n    @Input()\r\n    options = ['test']\r\n    @Output()\r\n    vote = new EventEmitter()\r\n}",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
@@ -300,8 +300,44 @@
             "stylesData": ""
         },
         {
+            "name": "ResultsComponent",
+            "id": "component-ResultsComponent-55f4ec4fbb71fc1d75aff78291417166",
+            "file": "src/stories/Results.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "Results",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<ol>\n<li *ngFor=\"let vote of votes\">{{vote.option}} - {{vote.count}} votes </li>\n</ol>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "votes",
+                    "defaultValue": "[]",
+                    "line": 13,
+                    "type": "Array<literal type>"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input} from '@angular/core'\r\n\r\n@Component({\r\n    selector: 'Results',\r\n    template: `\r\n    <ol>\r\n    <li *ngFor=\"let vote of votes\">{{vote.option}} - {{vote.count}} votes </li>\r\n    </ol>\r\n    `\r\n  })\r\nexport default class ResultsComponent {\r\n    @Input()\r\n    votes: Array<{option:string, count:number}> = []\r\n}",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": ""
+        },
+        {
             "name": "VotingCardComponent",
-            "id": "component-VotingCardComponent-11fd98cfb78a71735efb093341180f8a",
+            "id": "component-VotingCardComponent-077fffab96a27650eb892140098c05b5",
             "file": "src/stories/VotingCard.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -311,24 +347,25 @@
             "selector": "VotingCard",
             "styleUrls": [],
             "styles": [],
-            "template": "<h3>{{title}}</h3>    <Booth [options]=\"['yes']\"></Booth>",
+            "template": "<h3>{{title}}</h3>    <div  *ngIf=\"state === 'open'; else results\">\n        <Booth [options]=\"opt\" (vote)=\"onVote($event)\"></Booth>\n    </div>\n    <ng-template #results>\n        <Results [votes] = 'votes'></Results>\n    </ng-template>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
                 {
                     "name": "state",
                     "defaultValue": "\"\"",
-                    "line": 13
+                    "line": 19
                 },
                 {
                     "name": "title",
                     "defaultValue": "\"\"",
-                    "line": 11
+                    "line": 17
                 },
                 {
                     "name": "votes",
-                    "defaultValue": "[{}]",
-                    "line": 15
+                    "defaultValue": "[]",
+                    "line": 21,
+                    "type": "Array<literal type>"
                 }
             ],
             "outputsClass": [],
@@ -339,10 +376,18 @@
                     "type": "Array<string>",
                     "optional": false,
                     "description": "",
-                    "line": 9
+                    "line": 15
                 }
             ],
             "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22
+                },
                 {
                     "name": "onVote",
                     "args": [
@@ -354,7 +399,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 22,
+                    "line": 37,
                     "jsdoctags": [
                         {
                             "name": "vote",
@@ -371,7 +416,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core'\r\n//import { Booth } from './Booth.component'\r\n@Component({\r\n    selector: 'VotingCard',\r\n    template: `<h3>{{title}}</h3>\r\n    <Booth [options]=\"['yes']\"></Booth>`\r\n  })\r\nexport default class VotingCardComponent {\r\n    opt: Array<string> = []\r\n    @Input()\r\n    title = \"\"\r\n    @Input()\r\n    state = \"\"\r\n    @Input()\r\n    votes = [{}]\r\n    //public set votes(v: [{option:string, count:number}]){\r\n    //    this.votes = v\r\n    //    this.votes.forEach(vote => {\r\n    //        this.opt.push(vote.option)\r\n    //    });\r\n    //}\r\n    onVote(vote: string){\r\n        console.log(vote)\r\n    }\r\n}",
+            "sourceCode": "import { Component, Input} from '@angular/core'\r\n//import { Booth } from './Booth.component'\r\n@Component({\r\n    selector: 'VotingCard',\r\n    template: `<h3>{{title}}</h3>\r\n    <div  *ngIf=\"state === 'open'; else results\">\r\n        <Booth [options]=\"opt\" (vote)=\"onVote($event)\"></Booth>\r\n    </div>\r\n    <ng-template #results>\r\n        <Results [votes] = 'votes'></Results>\r\n    </ng-template>\r\n    `\r\n  })\r\nexport default class VotingCardComponent {\r\n    opt: Array<string> = []\r\n    @Input()\r\n    title = \"\"\r\n    @Input()\r\n    state = \"\"\r\n    @Input()\r\n    votes: Array<{option:string, count:number}> = []\r\n    ngOnInit(){\r\n        this.votes.forEach(vote => {\r\n            this.opt.push(vote.option)\r\n        });\r\n        //console.log(this.opt)\r\n    }\r\n    //ngOnChanges(changes: SimpleChange){\r\n    //    console.log(changes);\r\n    //}\r\n    //public set votes(v: [{option:string, count:number}]){\r\n    //    this.votes = v\r\n    //    this.votes.forEach(vote => {\r\n    //        this.opt.push(vote.option)\r\n    //    });\r\n    //}\r\n    onVote(vote: string){\r\n        this.votes.every(v => {\r\n            if(v.option===vote){\r\n                v.count++;\r\n                this.state = 'close'\r\n                return false;\r\n            }\r\n            return true;\r\n        });\r\n    }\r\n}",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
@@ -582,6 +627,14 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/Results.stories.ts",
+                "type": "Story<Results>",
+                "defaultValue": "(args: Results) =>({\r\n    props:args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/VotingCard.stories.ts",
                 "type": "Story<VotingCard>",
                 "defaultValue": "(args: VotingCard) =>({\r\n    props:args,\r\n})"
@@ -611,10 +664,26 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "YesNo",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Results.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "YesNoMaybe",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Booth.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "YesNoMaybe",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Results.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             }
@@ -780,6 +849,32 @@
                     "defaultValue": "Template.bind({})"
                 }
             ],
+            "src/stories/Results.stories.ts": [
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Results.stories.ts",
+                    "type": "Story<Results>",
+                    "defaultValue": "(args: Results) =>({\r\n    props:args,\r\n})"
+                },
+                {
+                    "name": "YesNo",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Results.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "YesNoMaybe",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Results.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
             "src/stories/VotingCard.stories.ts": [
                 {
                     "name": "Template",
@@ -826,7 +921,7 @@
         ]
     },
     "coverage": {
-        "count": 3,
+        "count": 2,
         "status": "low",
         "files": [
             {
@@ -1008,12 +1103,51 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/Results.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ResultsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Results.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Results.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "YesNo",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Results.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "YesNoMaybe",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/VotingCard.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "VotingCardComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/6",
+                "coverageCount": "0/7",
                 "status": "low"
             },
             {
