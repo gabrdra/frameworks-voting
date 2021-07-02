@@ -1,10 +1,18 @@
 import { Meta, Story } from '@storybook/angular/types-6-0';
 
-import VotingCard from './VotingCard';
+import VotingCard from './VotingCard.component';
+
+import Booth from './Booth.component'
+import { moduleMetadata } from '@storybook/angular';
 
 export default {
     title: 'Voting/VotingCard',
     component: VotingCard,
+    decorators: [
+        moduleMetadata({
+            declarations: [VotingCard, Booth]
+        })
+    ]
 } as Meta;
 
 const Template: Story<VotingCard> = (args: VotingCard) =>({
