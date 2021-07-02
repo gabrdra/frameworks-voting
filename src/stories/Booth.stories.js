@@ -9,11 +9,17 @@ export default {
 
 const Template = (args) => <Booth {...args} />;
 
+function vote(){
+  return;
+}
+
 export const YesNo = Template.bind();
 YesNo.args = {
-    options: ['Yes', 'No']
+    options: ['Yes', 'No'],
+    onVote: vote
 }
 export const YesNoMaybe = Template.bind();
 YesNoMaybe.args = {
-  options: ['Yes', 'No', 'Maybe']
+  options: ['Yes', 'No', 'Maybe'],
+  onVote: vote
 }

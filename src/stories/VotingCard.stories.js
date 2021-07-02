@@ -8,7 +8,7 @@ export default {
   argTypes: {
       title: '',
     state: {
-      options: ['open', 'close'],
+      options: ['open', 'closed'],
       control: { type: 'radio' }
     },
     votes: []
@@ -27,6 +27,6 @@ Voting1.args = {
 export const Voting2 = Template.bind();
 Voting2.args = {
     title: 'Do you want ice cream?',
-    state: 'close',
+    state: 'closed',
     votes: [{option:'Yes', count:8}, {option:'No', count:1}, {option:'Maybe', count:5}]
 }

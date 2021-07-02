@@ -11,7 +11,7 @@ export default function VotingCard(args) {
         }
     }, [args.state])
     let votingBooth = <Booth options = {options} onVote = {onVote}/>
-    if(state === 'close'){
+    if(state === 'closed'){
         votingBooth = <Results{...args} />
     }
     return (
@@ -26,7 +26,7 @@ export default function VotingCard(args) {
                 //console.log(vote.count);
                 vote.count++;
                 //console.log(vote.count);
-                setState('close');
+                setState('closed');
                 return false;
             }
             return true;
