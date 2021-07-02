@@ -4,11 +4,17 @@ import { Component, Input} from '@angular/core'
     selector: 'Results',
     template: `
     <ol>
-    <li *ngFor="let vote of votes">{{vote.option}} - {{vote.count}} votes </li>
+    <li *ngFor="let vote of votes">{{vote.option}} - {{vote.count}} votes {{(vote.count*100 / sum).toFixed(0)}}%</li>
     </ol>
     `
   })
 export default class ResultsComponent {
-    @Input()
-    votes: Array<{option:string, count:number}> = []
+  sum = 0
+  @Input()
+  votes: Array<{option:string, count:number}> = []
+  ngOnInit(){
+    this.votes.forEach(vote => {
+      this.sum+=vote.count
+    });
+  }
 }

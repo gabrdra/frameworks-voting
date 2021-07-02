@@ -38,7 +38,7 @@ export default class VotingCardComponent {
         this.votes.every(v => {
             if(v.option===vote){
                 v.count++;
-                this.state = 'close'
+                this.state = 'closed'
                 return false;
             }
             return true;
