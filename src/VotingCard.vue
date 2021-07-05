@@ -1,8 +1,8 @@
 <template>
     <div>
-    <h1>{{title}}</h1>
-    <Booth v-if="state === 'open'" :options = 'retrieveOptions()' @onVote="onVote"/>
-    <Results v-else-if="state === 'closed'" :votes = "votes"/>
+    <h3>{{title}}</h3>
+    <Booth v-if="this.currentState === 'open'" :options = 'retrieveOptions()' @onVote="onVote"/>
+    <Results v-else-if="this.currentState === 'closed'" :votes = "votes"/>
     </div>
 </template>
 
@@ -11,6 +11,9 @@ import Booth from "./Booth"
 import Results from "./Results"
 export default {
     name: 'VotingCard',
+    data: ()=>({
+        currentState: ''
+    }),
     components: {Booth, Results},
     props: {
         title: {
@@ -32,7 +35,7 @@ export default {
         this.votes.every(v => {
             if(v.option===option){
                 v.count++;
-                this.state = 'closed'
+                this.setCurrentState('closed')
                 return false;
             }
             return true;
@@ -44,8 +47,19 @@ export default {
             options.push(vote.option)
         });
         return options;
+    },
+    setCurrentState(s){
+        this.currentState = s
     }
-}
+    },
+    watch: {
+        state: function(){
+            this.setCurrentState(this.state)
+        }
+    },
+    created: function () {
+      this.currentState = this.state
+    },
 }
 </script>
 
