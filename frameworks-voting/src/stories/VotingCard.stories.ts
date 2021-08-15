@@ -1,8 +1,8 @@
 import { Meta, Story } from '@storybook/angular/types-6-0';
 
 import VotingCard from './VotingCard.component';
-import Results from './Results.component'
-import Booth from './Booth.component'
+import Results from './Results.component';
+import Booth from './Booth.component';
 import { moduleMetadata } from '@storybook/angular';
 
 export default {

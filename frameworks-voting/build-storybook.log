@@ -21,112 +21,127 @@ Node.js version : v16.3.0
 
 Operating system : Linux 5.4
 
-[16:08:33] No configuration file found, switching to CLI flags.
-[16:08:33] Using tsconfig file : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/tsconfig.json
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.browserslistrc
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.editorconfig
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.gitignore
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/README.md
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/angular.json
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/build-storybook.log
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/documentation.json
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/karma.conf.js
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/package-lock.json
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/package.json
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/tsconfig.app.json
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/tsconfig.json
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/tsconfig.spec.json
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.storybook/main.js
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.storybook/preview.js
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.storybook/tsconfig.json
-[16:08:33] Ignoring       : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.storybook/typings.d.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/favicon.ico
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/index.html
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/main.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/polyfills.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/styles.css
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/test.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app-routing.module.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.component.css
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.component.html
-[16:08:33] Ignoring       : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.component.spec.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.component.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.module.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/assets/.gitkeep
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/environments/environment.prod.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/environments/environment.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Booth.component.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Booth.stories.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Results.component.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Results.stories.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/VotingCard.component.ts
-[16:08:33] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/VotingCard.stories.ts
-[16:08:33] Searching package.json file
-[16:08:33] package.json file found
-[16:08:33] Processing package.json dependencies
-[16:08:33] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
-[16:08:33] README.md file found
-[16:08:33] Error during /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/CHANGELOG read
-[16:08:33] Continuing without CHANGELOG.md file
-[16:08:33] Error during /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/CONTRIBUTING read
-[16:08:33] Continuing without CONTRIBUTING.md file
-[16:08:33] Error during /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/LICENSE read
-[16:08:33] Continuing without LICENSE.md file
-[16:08:33] Error during /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/TODO read
-[16:08:33] Continuing without TODO.md file
-[16:08:33] Get dependencies data
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/main.ts
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/polyfills.ts
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/test.ts
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app-routing.module.ts
-[16:08:33] Analysing routes definitions and clean them if necessary
-[16:08:33] found          : AppRoutingModule
-[16:08:33]                : - imports:
-[16:08:33]                : 	- RouterModule
-[16:08:33]                : - exports:
-[16:08:33]                : 	- RouterModule
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.component.ts
-[16:08:33] found          : AppComponent
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.module.ts
-[16:08:33] found          : AppModule
-[16:08:33]                : - imports:
-[16:08:33]                : 	- BrowserModule
-[16:08:33]                : 	- AppRoutingModule
-[16:08:33]                : - declarations:
-[16:08:33]                : 	- AppComponent
-[16:08:33]                : - bootstrap:
-[16:08:33]                : 	- AppComponent
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/environments/environment.prod.ts
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/environments/environment.ts
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Booth.component.ts
-[16:08:33] found          : BoothComponent
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Booth.stories.ts
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Results.component.ts
-[16:08:33] found          : ResultsComponent
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Results.stories.ts
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/VotingCard.component.ts
-[16:08:33] found          : VotingCardComponent
-[16:08:33] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/VotingCard.stories.ts
-[16:08:33] -------------------
-[16:08:33] Project statistics 
-[16:08:33] - files      : 36
-[16:08:33] - module     : 2
-[16:08:33] - component  : 4
-[16:08:33] -------------------
-[16:08:33] Prepare components
-[16:08:33]  AppComponent has a templateUrl, include it
-[16:08:33]  AppComponent has styleUrls, include them
-[16:08:33] Prepare modules
-[16:08:33] Process routes
-[16:08:33] Prepare miscellaneous
-[16:08:33] Process documentation coverage report
-[16:08:33] Generating documentation in export format json
-[16:08:33] Documentation generated in ./ in 0.153 seconds
+[18:35:08] No configuration file found, switching to CLI flags.
+[18:35:08] Using tsconfig file : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/tsconfig.json
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.browserslistrc
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.editorconfig
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.gitignore
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/README.md
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/angular.json
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/build-storybook.log
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/documentation.json
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/karma.conf.js
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/package-lock.json
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/package.json
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/tsconfig.app.json
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/tsconfig.json
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/tsconfig.spec.json
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.storybook/main.js
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.storybook/preview.js
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.storybook/tsconfig.json
+[18:35:08] Ignoring       : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/.storybook/typings.d.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/favicon.ico
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/index.html
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/main.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/polyfills.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/styles.css
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/test.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app-routing.module.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.component.css
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.component.html
+[18:35:08] Ignoring       : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.component.spec.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.component.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.module.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/assets/.gitkeep
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/environments/environment.prod.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/environments/environment.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/App.component.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/App.stories.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Booth.component.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Booth.stories.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Data.service.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Form.component.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Form.stories.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Results.component.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Results.stories.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/VotingCard.component.ts
+[18:35:08] Including      : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/VotingCard.stories.ts
+[18:35:08] Searching package.json file
+[18:35:08] package.json file found
+[18:35:08] Processing package.json dependencies
+[18:35:08] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
+[18:35:08] README.md file found
+[18:35:08] Error during /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/CHANGELOG read
+[18:35:08] Continuing without CHANGELOG.md file
+[18:35:08] Error during /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/CONTRIBUTING read
+[18:35:08] Continuing without CONTRIBUTING.md file
+[18:35:08] Error during /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/LICENSE read
+[18:35:08] Continuing without LICENSE.md file
+[18:35:08] Error during /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/TODO read
+[18:35:08] Continuing without TODO.md file
+[18:35:08] Get dependencies data
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/main.ts
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/polyfills.ts
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/test.ts
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app-routing.module.ts
+[18:35:08] Analysing routes definitions and clean them if necessary
+[18:35:08] found          : AppRoutingModule
+[18:35:08]                : - imports:
+[18:35:08]                : 	- RouterModule
+[18:35:08]                : - exports:
+[18:35:08]                : 	- RouterModule
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.component.ts
+[18:35:08] found          : AppComponent
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/app/app.module.ts
+[18:35:08] found          : AppModule
+[18:35:08]                : - imports:
+[18:35:08]                : 	- BrowserModule
+[18:35:08]                : 	- AppRoutingModule
+[18:35:08]                : - declarations:
+[18:35:08]                : 	- AppComponent
+[18:35:08]                : - bootstrap:
+[18:35:08]                : 	- AppComponent
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/environments/environment.prod.ts
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/environments/environment.ts
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/App.component.ts
+[18:35:08] found          : AppComponent
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/App.stories.ts
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Booth.component.ts
+[18:35:08] found          : BoothComponent
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Booth.stories.ts
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Data.service.ts
+[18:35:08] found          : DataService
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Form.component.ts
+[18:35:08] found          : FormComponent
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Form.stories.ts
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Results.component.ts
+[18:35:08] found          : ResultsComponent
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/Results.stories.ts
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/VotingCard.component.ts
+[18:35:08] found          : VotingCardComponent
+[18:35:08] parsing        : /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/src/stories/VotingCard.stories.ts
+[18:35:08] -------------------
+[18:35:08] Project statistics 
+[18:35:08] - files      : 41
+[18:35:08] - module     : 2
+[18:35:08] - component  : 6
+[18:35:08] - injectable : 1
+[18:35:08] -------------------
+[18:35:08] Prepare components
+[18:35:08]  AppComponent has a templateUrl, include it
+[18:35:08]  AppComponent has styleUrls, include them
+[18:35:08] Prepare modules
+[18:35:08] Prepare injectables
+[18:35:08] Process routes
+[18:35:08] Prepare miscellaneous
+[18:35:08] Process documentation coverage report
+[18:35:08] Generating documentation in export format json
+[18:35:08] Documentation generated in ./ in 0.178 seconds
 info @storybook/angular v6.3.2
 info 
-info => Cleaning outputDir: /tmp/chromatic--17844-av00ydQp65wm
+info => Cleaning outputDir: /tmp/chromatic--28984-hh9FkeeuT0qB
 info => Loading presets
-(node:17914) [DEP0148] DeprecationWarning: Use of deprecated folder mapping "./" in the "exports" field module resolution of the package at /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/node_modules/tslib/package.json.
+(node:29062) [DEP0148] DeprecationWarning: Use of deprecated folder mapping "./" in the "exports" field module resolution of the package at /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/node_modules/tslib/package.json.
 Update this package.json to use a subpath pattern like "./*".
 (Use `node --trace-deprecation ...` to show where the warning was created)
 info => Compiling preview..
@@ -262,33 +277,33 @@ Starting type checking service...
 <s> [webpack.Progress] 10% building import loader ./node_modules/css-loader/dist/cjs.js
 <s> [webpack.Progress] 10% building import loader ./node_modules/postcss-loader/dist/cjs.js
 <s> [webpack.Progress] 10% building 0/15 entries 11/15 dependencies 0/11 modules
-<s> [webpack.Progress] 13% building 1/15 entries 47/109 dependencies 7/42 modules
+<s> [webpack.Progress] 13% building 1/15 entries 47/90 dependencies 7/42 modules
 <s> [webpack.Progress] 13% building import loader ./node_modules/ts-loader/index.js
 <s> [webpack.Progress] 13% building import loader ./node_modules/@storybook/angular/dist/ts3.9/server/ngx-template-loader/index.js
 <s> [webpack.Progress] 13% building import loader ./node_modules/@storybook/source-loader/dist/cjs/index.js
-<s> [webpack.Progress] 13% building 1/15 entries 139/218 dependencies 14/88 modules
-<s> [webpack.Progress] 17% building 2/15 entries 139/218 dependencies 14/88 modules
-<s> [webpack.Progress] 17% building 2/15 entries 398/563 dependencies 18/200 modules
+<s> [webpack.Progress] 13% building 1/15 entries 142/220 dependencies 14/91 modules
+<s> [webpack.Progress] 17% building 2/15 entries 142/220 dependencies 14/91 modules
+<s> [webpack.Progress] 17% building 2/15 entries 500/563 dependencies 17/229 modules
 [BABEL] Note: The code generator has deoptimised the styling of /home/gabriel/Frameworks/frameworks-voting/frameworks-voting/node_modules/prettier/standalone.js as it exceeds the max of 500KB.
-<s> [webpack.Progress] 17% building 2/15 entries 700/875 dependencies 25/265 modules
-<s> [webpack.Progress] 17% building 2/15 entries 1544/1600 dependencies 221/413 modules
-<s> [webpack.Progress] 17% building 2/15 entries 2000/2190 dependencies 285/489 modules
-<s> [webpack.Progress] 17% building 2/15 entries 2934/3022 dependencies 385/800 modules
-<s> [webpack.Progress] 17% building 2/15 entries 3700/3747 dependencies 580/989 modules
-<s> [webpack.Progress] 18% building 2/15 entries 4061/4200 dependencies 764/1059 modules
-<s> [webpack.Progress] 22% building 3/15 entries 4881/4911 dependencies 1104/1241 modules
-<s> [webpack.Progress] 24% building 4/15 entries 4881/4911 dependencies 1105/1241 modules
-<s> [webpack.Progress] 28% building 5/15 entries 4881/4911 dependencies 1106/1241 modules
-<s> [webpack.Progress] 32% building 6/15 entries 4881/4911 dependencies 1107/1241 modules
-<s> [webpack.Progress] 35% building 7/15 entries 4881/4911 dependencies 1108/1241 modules
-<s> [webpack.Progress] 39% building 8/15 entries 4881/4911 dependencies 1109/1241 modules
-<s> [webpack.Progress] 43% building 9/15 entries 4881/4911 dependencies 1110/1241 modules
-<s> [webpack.Progress] 46% building 10/15 entries 4881/4911 dependencies 1111/1241 modules
-<s> [webpack.Progress] 50% building 11/15 entries 4881/4911 dependencies 1112/1241 modules
-<s> [webpack.Progress] 53% building 12/15 entries 5443/5458 dependencies 1354/1386 modules
-<s> [webpack.Progress] 57% building 13/15 entries 5474/5475 dependencies 1385/1399 modules
-<s> [webpack.Progress] 61% building 14/15 entries 5475/5475 dependencies 1399/1400 modules
-<s> [webpack.Progress] 65% building 15/15 entries 5475/5475 dependencies 1400/1400 modules
+<s> [webpack.Progress] 17% building 2/15 entries 747/887 dependencies 24/271 modules
+<s> [webpack.Progress] 17% building 2/15 entries 1358/1500 dependencies 106/367 modules
+<s> [webpack.Progress] 17% building 2/15 entries 1998/2200 dependencies 279/491 modules
+<s> [webpack.Progress] 17% building 2/15 entries 2929/3000 dependencies 370/798 modules
+<s> [webpack.Progress] 17% building 2/15 entries 3700/3783 dependencies 645/940 modules
+<s> [webpack.Progress] 19% building 2/15 entries 4427/4465 dependencies 900/1137 modules
+<s> [webpack.Progress] 22% building 3/15 entries 4938/4974 dependencies 1115/1245 modules
+<s> [webpack.Progress] 24% building 4/15 entries 4938/4974 dependencies 1116/1245 modules
+<s> [webpack.Progress] 28% building 5/15 entries 4938/4974 dependencies 1117/1245 modules
+<s> [webpack.Progress] 32% building 6/15 entries 4938/4974 dependencies 1118/1245 modules
+<s> [webpack.Progress] 35% building 7/15 entries 4938/4974 dependencies 1119/1245 modules
+<s> [webpack.Progress] 39% building 8/15 entries 4938/4974 dependencies 1120/1245 modules
+<s> [webpack.Progress] 42% building 9/15 entries 4938/4974 dependencies 1121/1245 modules
+<s> [webpack.Progress] 46% building 10/15 entries 4938/4974 dependencies 1122/1245 modules
+<s> [webpack.Progress] 50% building 11/15 entries 4938/4974 dependencies 1123/1245 modules
+<s> [webpack.Progress] 53% building 12/15 entries 5470/5483 dependencies 1360/1394 modules
+<s> [webpack.Progress] 57% building 13/15 entries 5491/5491 dependencies 1386/1405 modules
+<s> [webpack.Progress] 61% building 14/15 entries 5491/5491 dependencies 1387/1405 modules
+<s> [webpack.Progress] 65% building 15/15 entries 5495/5495 dependencies 1405/1405 modules
 <s> [webpack.Progress] 65% building
 <s> [webpack.Progress] 69% building finish
 <s> [webpack.Progress] 69% building finish
@@ -390,8 +405,8 @@ Starting type checking service...
 <s> [webpack.Progress] 92% sealing asset processing TerserPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.36824ed3.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.36824ed3.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.6674f86c.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.6674f86c.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.6e779a0a.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.6e779a0a.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 90.44acb13b.iframe.bundle.js generate SourceMap
@@ -404,11 +419,11 @@ Starting type checking service...
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 459.348d56b1.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 331.c08b2907.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 331.c08b2907.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 813.4bb3460e.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 813.4bb3460e.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 813.1c8229b9.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 813.1c8229b9.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.36824ed3.iframe.bundle.js attach SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.36824ed3.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.6674f86c.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.6674f86c.iframe.bundle.js attached SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.6e779a0a.iframe.bundle.js attach SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.6e779a0a.iframe.bundle.js attached SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 90.44acb13b.iframe.bundle.js attach SourceMap
@@ -421,8 +436,8 @@ Starting type checking service...
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 459.348d56b1.iframe.bundle.js attached SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 331.c08b2907.iframe.bundle.js attach SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 331.c08b2907.iframe.bundle.js attached SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 813.4bb3460e.iframe.bundle.js attach SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 813.4bb3460e.iframe.bundle.js attached SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 813.1c8229b9.iframe.bundle.js attach SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 813.1c8229b9.iframe.bundle.js attached SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
@@ -473,9 +488,9 @@ WARN Assets:
 WARN   813.bec1cc80.iframe.bundle.js (3.85 MiB)
 WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 WARN Entrypoints:
-WARN   main (3.91 MiB)
+WARN   main (3.93 MiB)
 WARN       runtime~main.198eebb7.iframe.bundle.js
 WARN       813.bec1cc80.iframe.bundle.js
-WARN       main.0f7aeefe.iframe.bundle.js
+WARN       main.a3c41174.iframe.bundle.js
 WARN 
-info => Output directory: /tmp/chromatic--17844-av00ydQp65wm
+info => Output directory: /tmp/chromatic--28984-hh9FkeeuT0qB
