@@ -1,34 +1,39 @@
 <script>
     import { createEventDispatcher } from 'svelte'
+    import {title} from './title.js'
+    import {votes} from './votes.js'
     const dispatch = createEventDispatcher()
-    let title = ''
+    
+    let titleLocal = ''
     let errors = ''
-    let votes = [{option:'', count:0}, {option:'',count:0}]
+    let votesLocal = [{option:'', count:0}, {option:'',count:0}]
     function addAlternative(){
-        votes = [...votes, {option:'', count:0}]
+        votesLocal = [...votesLocal, {option:'', count:0}]
     }
     function removeAlternative(){
-        if(votes.length > 2){
-            votes.pop()
-            votes = votes
+        if(votesLocal.length > 2){
+            votesLocal.pop()
+            votesLocal = votesLocal
         }
     }
     function submit(){
         errors = ''
-        if(title.trim().length<5){
+        if(titleLocal.trim().length<5){
             errors += "the title should have at least 5 letters. \n"
         }
-        for (let i = 0; i < votes.length; i++) {
-            let vote = votes[i]
+        for (let i = 0; i < votesLocal.length; i++) {
+            let vote = votesLocal[i]
             if(vote.option.length < 1){
                 errors += "option " + (i+1) + " can not be empty. \n"
             }            
-            if(vote.count < 0){
+            if(vote.count < 0 || vote.count == null){
                 errors += "count " + (i+1) + " can not be smaller than 0. \n"
             }
         }
         if(errors.length < 1){
-            dispatch('submitForm',votes)
+            title.set(titleLocal)
+            votes.set(votesLocal)
+            dispatch('submit')
         }
     }
 </script>
@@ -39,9 +44,9 @@
     </style>
 <form on:submit|preventDefault={submit}>
     title:
-    <input bind:value={title}>
+    <input bind:value={titleLocal}>
     <br>
-    {#each votes as vote}
+    {#each votesLocal as vote}
         option: <input type="text" bind:value={vote.option}> count: <input type="number" bind:value={vote.count}> <br>
     {/each}
     <input type="submit" value="send">
