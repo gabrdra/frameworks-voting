@@ -9,9 +9,11 @@ export default {
   };
   
 const Template = (args, { argTypes }) => ({
-    props: Object.keys(argTypes),
     components: { Results },
-    template: '<Results v-bind="$props" />',
+    setup() {
+      return { args };
+    },
+    template: '<Results v-bind="args" />',
 });
   
 export const Voting1 = Template.bind();

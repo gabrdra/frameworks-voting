@@ -6,9 +6,11 @@ export default {
   };
 
 const Template = (args, { argTypes }) => ({
-    props: Object.keys(argTypes),
     components: { Booth },
-    template: '<Booth v-bind="$props" />',
+    setup() {
+        return { args };
+      },
+    template: '<Booth v-bind="args" />',
 });
 
 export const YesNo = Template.bind({});
